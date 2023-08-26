@@ -8,6 +8,7 @@
   font-size: x-large;
   border: none;
   margin-bottom: 25px;
+  cursor : "search";
 }
 
 .search-input::placeholder {
