@@ -45,7 +45,15 @@
   text-align: center;
   border-radius: 10px 10px 0 0;
 }
+/* Add 3D animation to the character cards */
 
+
+article div img:hover  {
+  transform: rotateY(180deg);
+}
+/* Front of the card *
+
+/* ... Your existing styles ... */
 span {
   text-align: left;
   font-size: 12px;

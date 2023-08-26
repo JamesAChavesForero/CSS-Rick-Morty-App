@@ -1,6 +1,6 @@
 section.banner{
     max-width: 100%;
-    background-image: url('../src/assets/rnm.png');
+    background-image: url('http://localhost:3000/CSS-Rick-Morty-App/src/assets/rnm.png');
     height: auto;
     margin-bottom: 20px;
     background-size: cover;
@@ -11,6 +11,64 @@ section.banner{
 }
 section.banner h2{
     z-index: 2;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin: 1.5 rem;
 }
+aside.wrapper span:hover { 
+    animation: bounce 1s;
+}
+.wrapper {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 30%;
+  }
+  
+  .letter {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    left: 15%;
+    transform-origin: 50%;
+    animation: bounce .9s alternate infinite ease-in-out;
+  }
+  
+  @keyframes bounce {
+    0% {
+      margin-top: 30px;
+      height: 5px;
+      border-radius: 50px 50px 25px 25px;
+      transform: scaleX(1.5);
+    }
+    40% {
+      height: 50px;
+      border-radius: 50%;
+      transform: scaleX(1);
+    }
+    100% {
+      margin-top: 0%;
+    }
+  }
+  
+  .letter:nth-child(2) {
+    margin-top: 10px;
+    animation-delay: .20s ;
+  }
+  .letter:nth-child(3) {
+    
+    animation-delay: .25s;
+  }
+  .letter:nth-child(4) {
+    animation-delay: .3s
+  }
+  .letter:nth-child(5) {
+    animation-delay: .35s;
+  }
+  .letter:nth-child(6) {
+    animation-delay: .40s;
+  }
+
+  
