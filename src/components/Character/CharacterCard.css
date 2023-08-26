@@ -1,0 +1,83 @@
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: max-content;
+  transition: 100s ease-in-out;
+}
+.card-container .character-card:hover{
+  transition: var(--transition);
+  scale: 1.1;
+}
+.character-card {
+  border-radius: 10px 10px 0 0;
+  height: 300px;
+  width: 150px;
+  margin-bottom: 30px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  background-image: linear-gradient(var(--dBlue), var(--white));
+}
+
+.character-card:hover {
+  border: 0.3px solid var(--lBlue);
+  background: var(--dBlue3);
+
+}
+
+.character-card img {
+  height: auto;
+  width: 150px;
+  border-radius: 10px 10px 0 0;
+  border: 1.5px solid var(--white);
+}
+
+.character-card h2 {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  background-color: rgba(16, 18, 88, 0.612);
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+}
+
+span {
+  text-align: left;
+  font-size: 12px;
+  padding-left: 7px;
+  text-shadow: -0.5px -0.5px 0 var(--dBlue2), 0.5px -0.5px 0 var(--dBlue2), -0.5px 0.5px 0 var(--dBlue2), 0.5px 0.5px 0 var(--dBlue2);
+}
+
+.character-card button {
+  margin-top: 10px;
+  width: 100%;
+  background: var(--lBlue);
+  outline: none;
+  border-radius: 10px 10px 0 0;
+  border: 0;
+  height: 25px;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.character-card button {
+  box-shadow: 0px -2px 35px var(--dBlue2);
+  background-color: var(--dBlue2);
+}
+
+.character-card button:hover {
+  transition: var(--transition);
+  height: 30px;
+  font-size: large;
+}
+.character-card button img{
+  height: 50%;
+  width: auto;
+  border: none;
+}

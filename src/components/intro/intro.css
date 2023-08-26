@@ -1,0 +1,16 @@
+section.banner{
+    max-width: 100%;
+    background-image: url('../src/assets/rnm.png');
+    height: auto;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+    padding: 2.5rem;
+}
+section.banner h2{
+    z-index: 2;
+    font-size: 2.5rem;
+    margin: 1.5 rem;
+}

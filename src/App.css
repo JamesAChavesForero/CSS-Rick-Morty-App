@@ -1,0 +1,58 @@
+.search-input {
+  width: 100%;
+  background: transparent;
+  color: inherit;
+  outline: hsl(160, 50%, 75%) solid 2px;
+  border-radius: 20px;
+  padding: 12px;
+  font-size: x-large;
+  border: none;
+  margin-bottom: 25px;
+}
+
+.search-input::placeholder {
+  font-size: 14px;
+  color: var(--light);
+}
+
+.App {
+  padding: 2rem;
+}
+
+img.loader {
+  height: 10%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 15%;
+  text-align: center;
+  transform-origin: center;
+  animation: mercury-group 2s linear infinite;
+}
+
+@keyframes mercury-group {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(-360deg);
+  }
+}
+
+h5 {
+  position: absolute;
+  font-size: 20px;
+  top: 115px;
+  right: 5px;
+  text-decoration: underline;
+}
+
+.alive {
+  color: green;
+}
+
+.dead {
+  color: red;
+}
