@@ -1,4 +1,4 @@
-section.banner{
+section.banner {
     max-width: 100%;
     background-image: url('http://localhost:3000/CSS-Rick-Morty-App/src/assets/rnm.png');
     height: auto;
@@ -9,14 +9,37 @@ section.banner{
     z-index: -1;
     padding: 2.5rem;
 }
-section.banner h2{
+
+section.banner h2 {
     z-index: 2;
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     margin: 1.5 rem;
+    width: max-content;
 }
-aside.wrapper span:hover { 
+
+small:hover {
+    color: var(--dBlue);
+    margin-left: 10px;
+    transition: 0.5s;
+    font-size: large;
+}
+
+a {
+    scroll-behavior: smooth !important;
+    transition: 20s;
+}
+
+section.banner span {
+    display: flex;
+    justify-content: center;
+    font-size: 1.9rem;
+    flex-wrap: wrap;
+}
+
+aside.wrapper span:hover {
     animation: bounce 1s;
 }
+
 .wrapper {
     width: 200px;
     height: 60px;
@@ -25,50 +48,169 @@ aside.wrapper span:hover {
     align-items: center;
     z-index: 1;
     width: 30%;
-  }
-  
-  .letter {
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.letter {
+    font-size: 2.5rem;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    left: 15%;
     transform-origin: 50%;
     animation: bounce .9s alternate infinite ease-in-out;
-  }
-  
-  @keyframes bounce {
-    0% {
-      margin-top: 30px;
-      height: 5px;
-      border-radius: 50px 50px 25px 25px;
-      transform: scaleX(1.5);
-    }
-    40% {
-      height: 50px;
-      border-radius: 50%;
-      transform: scaleX(1);
-    }
-    100% {
-      margin-top: 0%;
-    }
-  }
-  
-  .letter:nth-child(2) {
-    margin-top: 10px;
-    animation-delay: .20s ;
-  }
-  .letter:nth-child(3) {
-    
-    animation-delay: .25s;
-  }
-  .letter:nth-child(4) {
-    animation-delay: .3s
-  }
-  .letter:nth-child(5) {
-    animation-delay: .35s;
-  }
-  .letter:nth-child(6) {
-    animation-delay: .40s;
-  }
+}
 
-  
+.letter:nth-child(2) {
+    margin-top: 10px;
+    animation-delay: .20s;
+}
+
+.letter:nth-child(3) {
+
+    animation-delay: .25s;
+}
+
+.letter:nth-child(4) {
+    animation-delay: .3s
+}
+
+.letter:nth-child(5) {
+    animation-delay: .35s;
+}
+
+.letter:nth-child(6) {
+    animation-delay: .40s;
+}
+
+
+.realButton {
+    display: flex;
+    flex-direction: column;
+    min-width: 60px;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    font-size: 13px;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 8px;
+    height: 65px;
+    padding: 12px;
+    border-radius: 15px 15px 12px 12px;
+    cursor: pointer;
+    position: relative;
+    transition: all .1s ease-in-out 0s;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    background-position: bottom right, bottom right;
+    background-size: inset;
+    background-repeat: no-repeat;
+    box-shadow: inset -4px -10px 0px rgba(255, 255, 255, 0.4),
+        inset -4px -8px 0px rgba(0, 0, 0, 0.3),
+        0px 2px 1px rgba(0, 0, 0, 0.3),
+        0px 2px 1px rgba(255, 255, 255, 0.1);
+    transform: perspective(70px) rotateX(5deg) rotateY(0deg);
+    margin-left: 10px;
+    text-decoration: none;
+}
+.realButton:hover{
+    border: 2px solid whites;
+    font-size: medium;
+}
+
+.realButton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0.5));
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: inset 4px 0px 0px rgba(255, 255, 255, 0.1),
+        inset 4px -8px 0px rgba(0, 0, 0, 0.3);
+    transition: all .1s ease-in-out 0s;
+}
+
+.realButton::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    background-position: bottom right, bottom right;
+    background-size: 100% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    border-radius: 15px;
+    transition: all .1s ease-in-out 0s;
+}
+
+.realButton:active {
+    will-change: transform;
+    transform: perspective(80px) rotateX(5deg) rotateY(1deg) translateY(3px) scale(0.96);
+    height: 64px;
+    border: 0.25px solid rgba(0, 0, 0, 0.2);
+    box-shadow: inset -4px -8px 0px rgba(255, 255, 255, 0.2),
+        inset -4px -6px 0px rgba(0, 0, 0, 0.8),
+        0px 1px 0px rgba(0, 0, 0, 0.9),
+        0px 1px 0px rgba(255, 255, 255, 0.2);
+    transition: all .1s ease-in-out 0s;
+}
+
+.realButton::after:active {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.2));
+}
+
+
+.realButton svg {
+    width: 15px;
+    height: 15px;
+    margin-left: 35%;
+}
+
+@keyframes overlay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.realButton:focus {
+    outline: none;
+}
+
+@keyframes bounce {
+    0% {
+        margin-top: 30px;
+        height: 5px;
+        border-radius: 50px 50px 25px 25px;
+        transform: scaleX(1.5);
+    }
+
+    40% {
+        height: 50px;
+        border-radius: 50%;
+        transform: scaleX(1);
+    }
+
+    100% {
+        margin-top: 0%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner{
+        display: flex;
+        flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }

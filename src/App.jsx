@@ -26,9 +26,9 @@ function App() {
     <main className="App">
       <Intro />
       {favorites.length > 0 ? <FavoriteSection props={data} /> : ''}
-      <input placeholder="Type a name...." type="text" name="search" className="search-input" onChange={(event) => setSearch(event.target.value)} />
+      <input id="search" placeholder="Type a name...." type="text" name="search" className="search-input" onChange={(event) => setSearch(event.target.value)} />
       {loading && <img className="loader" src={loader} />}
-      <div className="card-container">
+      <div id="card-container" className="card-container">
         {data?.results &&
           data.results.map((character) => (
             <CharacterCard props={character} />

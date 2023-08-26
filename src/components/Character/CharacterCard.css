@@ -49,7 +49,8 @@
 
 
 article div img:hover  {
-  transform: rotateY(180deg);
+  transform: rotateY(360deg);
+  transition: 2.5s ease-in-out;
 }
 /* Front of the card *
 
