@@ -20,6 +20,7 @@ Here's a little sneak peek of what the page looks like:
 ![image](https://github.com/JamesAChavesForero/CSS-Rick-Morty-App/assets/143219390/ca6f733e-9908-404d-99aa-11cf4a18c776)
 
 GITHUB URL : https://jamesachavesforero.github.io/CSS-Rick-Morty-App/
+PREVIEW : ![image](https://github.com/JamesAChavesForero/CSS-Rick-Morty-App/assets/143219390/e182820d-bfa0-4bbf-b5f8-1829eed07130)
 
 ## A Note from the Developer
 
