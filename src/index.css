@@ -22,19 +22,25 @@ body{
   background-color: var(--dBlue);
   background-image: url('../src/assets/bg-texture.png');
   min-width: 375px;
+  
 }
 
 ::-webkit-scrollbar {
   height: 8px;
   width: 12px;
   scroll-behavior: smooth;
+  cursor: grab !important;
 }
 
 ::-webkit-scrollbar-track {
   background-color: transparent;
+  cursor:pointer;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 20px;
   background: hsl(160, 50%, 75%);
+  
+    border-radius: calc(15px / 2);
+  cursor:pointer;
 }

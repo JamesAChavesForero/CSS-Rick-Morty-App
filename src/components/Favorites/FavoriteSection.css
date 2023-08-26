@@ -1,5 +1,5 @@
 .fav-section {
-    width: 115%;
+    width: 110vw;
     scale: 0.8;
     background: transparent;
     display: flex;
@@ -7,7 +7,7 @@
     overflow-x: auto;
     height: max-content;
     position: relative;
-    left: -50px;
+    left: -100px;
     overflow-x: auto;
   }
   .fav-section .character-card:hover{
@@ -17,3 +17,4 @@
   .fav-section article {
     margin-left: 15px;
   }
+ 

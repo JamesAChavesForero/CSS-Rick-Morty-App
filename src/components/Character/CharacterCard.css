@@ -21,6 +21,7 @@
   flex-direction: column;
   padding-bottom: 20px;
   background-image: linear-gradient(var(--dBlue), var(--white));
+  cursor: pointer;
 }
 
 .character-card:hover {
@@ -44,17 +45,15 @@
   font-size: 15px;
   text-align: center;
   border-radius: 10px 10px 0 0;
+  z-index: 10;
 }
-/* Add 3D animation to the character cards */
 
 
 article div img:hover  {
   transform: rotateY(360deg);
   transition: 2.5s ease-in-out;
 }
-/* Front of the card *
 
-/* ... Your existing styles ... */
 span {
   text-align: left;
   font-size: 12px;
